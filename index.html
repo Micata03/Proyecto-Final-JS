@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- mobile metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+<!-- site metas -->
+<title>Adoptame</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">	
+<!-- bootstrap css -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<!-- style css -->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Responsive-->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- fevicon -->
+<link rel="icon" href="images/logo.jpg" type="image/gif" />
+<!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<!-- Tweaks for older IEs-->
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<!-- owl stylesheets --> 
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+	<!-- header section start -->
+	<div class="header_section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-lg-3">
+					<div class="logo"><a href="index.html"><img src="images/logo.jpg"></a></div>
+				</div>
+				<div class="col-sm-6">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                           <a class="nav-item nav-link" href="index.html">Home</a>
+                           <a class="nav-item nav-link" href="browse ads.html">Buscador</a>
+                           <a class="nav-item nav-link" href="about.html">Nosotros</a>
+                           <a class="nav-item nav-link" href="clients.html">Opiniones</a>
+                           
+                        </div>
+                    </div>
+                    </nav>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- header section end -->
+	<!-- banner section start -->
+	<div class="layout_padding banner_section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 class="banner_taital">All You Need Is a Pet!</h1>
+					<p class="browse_text">Encuentra a tu compañero ideal en minutos. Nuestra base de datos te mostrara las mascotas que se ajustan a tus preferencias</p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- banner section end -->
+	<!-- search box start -->
+	<div class="container">
+		<div class="search_box">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="busqueda">Que buscas?:</label>
+						<select class="nice-select" name="tipo" id="tipoMascota">
+							
+						<option value="Gato">Gato</option>
+						<option value="Perro">Perro</option>
+					</select>	
+				</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="edad">Que edad?</label>
+					<select class="nice-select" name="edad" id="edad">
+						
+						<option value="Cachorro">Cachorro</option>
+						<option value="Adulto">Adulto</option>
+					</select>	
+				</div>
+				</div>
+				
+				
+				<div class="col-sm-3">
+					<div class="form-group">
+						<label for="tamaño">Que tamaño busca?</label>
+					<select class="nice-select" name="tamaño" id="tipoTamanio">
+							
+						<option value="Grande">Grande</option>
+						<option value="Mediano">Mediano</option>
+						<option value="Pequeño">Pequeño</option>
+					</select>	
+				</div>
+				</div>
+				
+				<div class="col-sm-3">
+					<div class="form-group">
+                        <button class="search_bt" id="btn_buscar" >Buscar</button>
+                    </div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div id="resultado"></div>
+	<!-- search box end -->
+	<!-- section PROMOTED start -->
+	<div class=" layout_padding promoted_sectipon tarjetas">
+		<div class="container">
+			<h1 class="promoted_text ">Mascotas <span style="border-bottom: 5px solid #4bc714;">Adoptables</span></h1>
+			<div class="images_main">
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<div class="images"><img src="images/gato (1).jpg" style="width: 100%;"></div>
+						<button class="promoted_bt">En Adopcion</button>
+						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
+						<div class="numbar_text">30<span class="like-icon">01</span></div>
+						<button class="mobile_bt"><a href="#">Gatos</a></button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<div class="images"><img src="images/dog2.jpg" style="width: 100%;"></div>
+						<button class="promoted_bt">Adoptado!</button>
+						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
+						<div class="numbar_text">30<span class="like-icon">01</span></div>
+						<button class="mobile_bt"><a href="#">Perros</a></button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<div class="images"><img src="images/dog3.jpg" style="width: 100%;"></div>
+						<button class="promoted_bt">En Adopcion</button>
+						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
+						<div class="numbar_text">30<span class="like-icon">01</span></div>
+						<button class="mobile_bt"><a href="#">Perros</a></button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<div class="images"><img src="images/dog4.jpg" style="width: 100%;"></div>
+						<button class="promoted_bt">En Adopcion</button>
+						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
+						<div class="numbar_text">30<span class="like-icon">01</span></div>
+						<button class="mobile_bt"><a href="#">Perros</a></button>
+					</div>
+				</div>
+			</div>
+			<div class="images_main">
+				<div class="row">
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<div><img src="images/gato (3).jpg" style="width: 100%;"></div>
+						<button class="promoted_bt">En Adopcion</button>
+						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
+						<div class="numbar_text">30<span class="like-icon">01</span></div>
+						<button class="mobile_bt"><a href="#">Gatos</a></button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<div><img src="images/dog6.jpg" style="width: 100%;"></div>
+						<button class="promoted_bt">Adoptado!</button>
+						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
+						<div class="numbar_text">30<span class="like-icon">01</span></div>
+						<button class="mobile_bt"><a href="#">Perros</a></button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<div><img src="images/dog7.jpg" style="width: 100%;"></div>
+						<button class="promoted_bt">En Adopcion</button>
+						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
+						<div class="numbar_text">30<span class="like-icon">01</span></div>
+						<button class="mobile_bt"><a href="#">Perros</a></button>
+					</div>
+					<div class="col-sm-6 col-md-6 col-lg-3">
+						<div><img src="images/gato (2).jpg" style="width: 100%;"></div>
+						<button class="promoted_bt">En Adopcion</button>
+						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
+						<div class="numbar_text">30<span class="like-icon">01</span></div>
+						<button class="mobile_bt"><a href="#">Gatos</a></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- section PROMOTED end -->
+	
+	<!-- about section start -->
+    <div class="layout_padding about_section">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm-12">
+    				<h1 class="about_taital">Sobre nosotros</h1>
+    				<p class="lorem_text">Nuestra mision en ayudar a estas adorables mascotas a encotrar su humano perfecto! NO compres, ADOPTA!</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+	<!-- about section end -->
+	<!-- client section start -->
+    <div class="layout_padding clients_section">
+    	<div class="container">
+    		<div id="client_slide" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#client_slide" data-slide-to="0" class="active"></li>
+    <li data-target="#client_slide" data-slide-to="1"></li>
+    <li data-target="#client_slide" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+	<h1 class="promoted_text">Opiniones <span style="border-bottom: 5px solid #4bc714;">Mascoteras</span></h1>
+    <div class="carousel-item active">
+      <div class="row">
+		
+    			<div class="col-sm-12">
+
+    				
+    				<div class="client_img"><img src="images/cliente (1).jpg"></div>
+    				<h1 class="client_text">Juan Perez</h1>
+    				
+    				<p class="long_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to</p>
+    			</div>
+    		</div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+    			<div class="col-sm-12">
+    				
+    				<div class="client_img"><img src="images/cliente (2).jpg"></div>
+    				<h1 class="client_text">Sara Conhor</h1>
+    				
+    				<p class="long_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to</p>
+    			</div>
+    		</div>
+    </div>
+    <div class="carousel-item">
+      <div class="row">
+    			<div class="col-sm-12">
+    				
+    				<div class="client_img"><img src="images/cliente (3).jpg"></div>
+    				<h1 class="client_text">Amelia Brand</h1>
+    				
+    				<p class="long_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to</p>
+    			</div>
+    		</div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+	<!-- client section end -->
+	
+	<!-- footer section start -->
+	<div class="layout_padding footer_section">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<h1 class="subscribe_text">Subcribite</h1>
+					<p class="ipsum_text">Te enviaremos info sobre nuestras mascotas</p>
+					<input type="text" class="email_text" placeholder="Email" name="Name">
+					<button class="submit_text">Enviar</button>
+				</div>
+				<div class="col-sm-6 col-md-6 col-lg-3">
+					<h1 class="quick_text">Contacto</h1>
+					<div class="map_flag"><img src="images/map-flag.png"><span class="padding-left">Capital Federal</span></div>
+					<div class="dolor_text"><img src="images/email-icon.png"><span class="padding-left">adoptame@gmail.com</span></div>
+					<div class="dolor_text"><img src="images/phone-icon.png"><span class="padding-left">+11586954775</span></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- footer section end -->
+	<!-- copyright section start -->
+    
+	<!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+	 
+	  <script src="js/main.js"></script>
+      <script>
+         $(document).ready(function(){
+         $(".fancybox").fancybox({
+         openEffect: "none",
+         closeEffect: "none"
+         });
+         
+         $(".zoom").hover(function(){
+         
+         $(this).addClass('transition');
+         }, function(){
+         
+         $(this).removeClass('transition');
+         });
+         });
+         
+      </script> 
+    
+</body>
+</html>
